@@ -1,0 +1,80 @@
+.start {
+	position: relative;
+	padding: 115px 0 160px;
+}
+
+.start .phone {
+	position: absolute;
+	right: 300px;
+	top: -690px;
+	width: 716px;
+	height: 948px;
+	background-image: url("../../img/iPhone.png");
+}
+
+.start-text {
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: space-between;
+}
+
+.start .title {
+	margin-bottom: 34px;
+}
+
+.start-text-left {
+	flex-basis: 46.5%;
+}
+
+.start-text-right {
+	flex-basis: 46.5%;
+}
+
+.start-text-left p:nth-child(2) {
+	margin: 23px 0 24px;
+}
+
+.start-text-right p:nth-child(1) {
+	margin: 98px 0 24px;
+}
+
+.start-gallery {
+	display: grid;
+	width: 100%;
+	height: 556px;
+	grid-template-columns: repeat(4, 400px);
+	grid-template-rows: 278px 2fr; 
+}
+
+.start-gallery .item-1 {
+	background-color: #f5989d;
+}
+
+.start-gallery .item-2 {
+	background-color: #615f7d;
+}
+
+.start-gallery .item-3 {
+	background-image: url("../../img/gallery/ice-photo.jpg");
+}
+
+.start-gallery .item-4 {
+	background-color: #bd8cbf;
+}
+
+.start-gallery .item-5 {
+	grid-column: 1 / 3;
+	background-image: url("../../img/gallery/sun-photo.jpg");
+}
+
+.start-gallery .item-6 {
+	background-color: #82ca9c;
+}
+
+.start-gallery .item-7 {
+	background-image: url("../../img/gallery/h-photo.png.jpg");
+}
