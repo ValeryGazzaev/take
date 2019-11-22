@@ -5,6 +5,7 @@
 	background-size: cover;
 	background-position: center;
 	background-image: url("../../img/header-bg.jpg");
+	padding-top: 56px;
 }
 
 .header .logo {
@@ -32,13 +33,15 @@
 .header-promo {
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%); 
+	transform: translateY(-50%);
+	margin-left: 120px;
 }
 
 .header-promo p:nth-child(2) {
 	max-width: 440px;
 	font-size: 13px;
 	color: #fff;
+	margin-top: 19px;
 }
 
 .header .site-link {
@@ -59,4 +62,23 @@
 
 .header .site-link a:hover {
 	text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+	.header .site-link {
+	position: absolute;
+	width: 200px;
+	bottom: 0;
+	top: auto;
+	transform: translateY(0);
+	transform: none;
+	font-weight: 300;
+	color: #fff;
+}
+.header-promo {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	margin-left: 0;
+}
 }
