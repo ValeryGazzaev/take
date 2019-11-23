@@ -47,7 +47,9 @@
 	width: 100%;
 	height: 556px;
 	grid-template-columns: repeat(4, 400px);
-	grid-template-rows: 278px 2fr; 
+	grid-template-rows: 278px 2fr;
+	margin: 80px 0 98px;
+	color: #fff; 
 }
 
 .start-gallery .item-1 {
@@ -76,5 +78,61 @@
 }
 
 .start-gallery .item-7 {
+	-webkit-background-size: cover;
+	background-size: cover;
 	background-image: url("../../img/gallery/h-photo.png.jpg");
+}
+
+.start-gallery .items {
+	position: relative;
+	padding: 44px;
+}
+
+.start-gallery p:nth-child(2) {
+	font-size: 13px;
+	line-height: 24px;
+	margin-top: 19px;
+}
+
+.start-gallery .item-5 p:nth-child(2) {
+	max-width: 440px;
+}
+
+.start-gallery a {
+	position: absolute;
+	bottom: 53px;
+	white-space: nowrap;
+	display: inline-block;
+	font-weight: 700;
+	color: #fff;
+}
+
+.start-gallery a i {
+	display: inline-block;
+	margin-left: 15px;
+}
+
+.start-gallery a:hover {
+	color: #000;
+	text-shadow: 1px 2px 5px #000;
+}
+
+.start-gallery a:active {
+	color: #eee;
+}
+
+.start-gallery .fa-heart {
+	position: absolute;
+	font-size: 18px;
+	bottom: 42px;
+	right: 42.5px;
+}
+
+.start-gallery .fas {
+	opacity: 0;
+	transition: all 0.1s ease;
+}
+
+.start-gallery .fas:hover {
+	opacity: 1;
 }
