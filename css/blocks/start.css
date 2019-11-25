@@ -14,12 +14,13 @@
 
 .start-text {
 	width: 100%;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
 	display: flex;
-	justify-content: space-between;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
 }
 
 .start .title {
@@ -43,10 +44,13 @@
 }
 
 .start-gallery {
+	display: -ms-grid;
 	display: grid;
 	width: 100%;
 	height: 556px;
+	-ms-grid-columns: (400px)[4];
 	grid-template-columns: repeat(4, 400px);
+	-ms-grid-rows: 278px 2fr;
 	grid-template-rows: 278px 2fr;
 	margin: 80px 0 98px;
 	color: #fff; 
@@ -69,6 +73,8 @@
 }
 
 .start-gallery .item-5 {
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 2;
 	grid-column: 1 / 3;
 	background-image: url("../../img/gallery/sun-photo.jpg");
 }
@@ -78,7 +84,6 @@
 }
 
 .start-gallery .item-7 {
-	-webkit-background-size: cover;
 	background-size: cover;
 	background-image: url("../../img/gallery/h-photo.png.jpg");
 }
@@ -121,6 +126,14 @@
 	color: #eee;
 }
 
+.fa-long-arrow-alt-right {
+	position: absolute;
+	top: 52%;
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
+	display: block;
+}
+
 .start-gallery .fa-heart {
 	position: absolute;
 	font-size: 18px;
@@ -128,11 +141,96 @@
 	right: 42.5px;
 }
 
-.start-gallery .fas {
+.start-gallery .c-heart {
 	opacity: 0;
+	-webkit-transition: all 0.1s ease;
 	transition: all 0.1s ease;
 }
 
-.start-gallery .fas:hover {
+.start-gallery .c-heart:hover {
 	opacity: 1;
+}
+
+.start-bottom-inner {
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
+}
+
+.start-bottom-inner .blocks {
+	width: 270px;
+}
+
+.start-bottom-inner .blocks .sub-title {
+	margin: 29px 0 17px;
+}
+
+.start-bottom-inner .site-link {
+	margin-top: -20px;
+	left: 42px;
+	color: #b8b8b8;
+} 
+
+.start-bottom-inner .site-link:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 1790px) {
+	.start .phone {
+		position: absolute;
+		right: 9%;
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
+		top: -200px;
+		width: 358px;
+		height: 474px;
+		background-size: cover;
+		background-image: url("../../img/iPhone.png");
+	}
+}
+
+@media (max-width: 1455px) {
+	.start .phone {
+		right: 3%;
+	}
+	.start-bottom-inner .site-link {
+		margin-top: 0;
+		left: auto;
+		bottom: 0;
+		-webkit-transform: rotate(0);
+		        transform: rotate(0);
+		color: #b8b8b8;
+	} 
+}
+
+@media (max-width: 840px) {
+	.start-text {
+		-moz-flex-direction: column;
+		-o-flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		        flex-direction: column;
+	}
+	.start .phone {
+		right: 0;
+		-webkit-transform: translateX(0);
+		        transform: translateX(0);
+		top: -320px;	
+	}
+}
+
+@media (max-width: 580px) {
+	.start {
+		padding: 60px 0;
+	}
+	.start .phone {
+		display: none;
+	}
+	.start-text-right p:nth-child(1) {
+		margin: 60px 0 24px;
+	}
 }

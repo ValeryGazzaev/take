@@ -1,7 +1,6 @@
 .header {
 	position: relative;
 	height: 100vh;
-	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center;
 	background-image: url("../../img/header-bg.jpg");
@@ -10,14 +9,16 @@
 
 .header .logo {
 	width: 90px;
-	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
 	display: -o-flex;
+	display: -webkit-box;
 	display: flex;
 	-ms-align-items: center;
-	align-items: center;
-	justify-content: space-between;
+	-webkit-box-align: center;
+	        align-items: center;
+	-webkit-box-pack: justify;
+	        justify-content: space-between;
 }
 
 .header .logo p {
@@ -33,7 +34,8 @@
 .header-promo {
 	position: absolute;
 	top: 50%;
-	transform: translateY(-50%);
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%);
 	margin-left: 120px;
 }
 
@@ -48,8 +50,10 @@
 	position: absolute;
 	margin-top: 22px;
 	top: 50%;
-	transform: translateY(-50%); 
-	transform: rotate(-90deg);
+	-webkit-transform: translateY(-50%);
+	        transform: translateY(-50%); 
+	-webkit-transform: rotate(-90deg); 
+	        transform: rotate(-90deg);
 	font-weight: 300;
 	color: #fff;
 }
@@ -69,8 +73,10 @@
 		position: absolute;
 		bottom: 0;
 		top: auto;
-		transform: translateY(0);
-		transform: none;
+		-webkit-transform: translateY(0);
+		        transform: translateY(0);
+		-webkit-transform: none;
+		        transform: none;
 	}
 	.header-promo {
 		margin-left: 0;
