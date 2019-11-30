@@ -1,0 +1,56 @@
+.buy-block {
+	background-color: #f6f7fa;
+}
+
+.buy-wrap {
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.buy-inner-blocks {
+	max-width: 570px;
+}
+
+.buy-inner-blocks p:nth-child(1) {
+	width: 77px;
+  height: 24px;
+	display: inline-block;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 11px;
+	line-height: 24px;
+	font-weight: 900;
+	background-color: #e1e1e1;
+	border-radius: 5px;
+	color: #fff;
+}
+
+.buy-inner-blocks p:nth-child(2) {
+	font-size: 30px;
+	line-height: 40px;
+	font-weight: 300;
+	color: #2e3b4e;
+}
+
+.buy-inner-blocks p:nth-child(3) {
+	font-size: 14px;
+	line-height: 25px;
+	color: #8297a7;
+}
+
+.buy-inner-blocks a:nth-child(2) {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+.buy-inner-blocks i {
+	color: #c5c5c5;
+	font-size: 18px;
+}
+
+.buy-btn {
+	display: block;
+}
