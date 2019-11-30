@@ -1,0 +1,48 @@
+.power {
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-image: url("../../img/content-bg.jpg");
+	padding: 438px 0 125px;
+}
+
+.power-wrap .main-title {
+	max-width: 520px;
+}
+
+.power-wrap p:nth-child(2) {
+	max-width: 470px;
+	font-size: 13px;
+	margin: 25px 0 15px;
+	color: #fff;
+}
+
+.power-wrap a {
+	position: relative;
+	font-weight: 700;
+	color: #fff;
+}
+
+.power-wrap a i {
+	position: absolute;
+	top: 50%;
+	margin-left: 15px;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+	display: inline-block;
+	color: #fff;
+}
+
+.power-wrap a:hover {
+	color: #eee;
+	text-shadow: 1px 2px 5px #fff;
+}
+
+.power-wrap a:active {
+	color: #eee;
+}
+
+@media (max-width: 540px) {
+	.power {
+		padding: 100px 0;
+	}
+}
