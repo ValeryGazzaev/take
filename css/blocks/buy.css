@@ -1,5 +1,7 @@
 .buy-block {
+	position: relative;
 	background-color: #f6f7fa;
+	padding: 103px 0 145px;
 }
 
 .buy-wrap {
@@ -8,15 +10,24 @@
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
+	justify-content: space-between;
 }
 
 .buy-inner-blocks {
-	max-width: 570px;
+	max-width: 448px;
+	transition: all 0.2s ease;
+	padding: 45px 70px 54px 52px;
 }
+
+.buy-inner-blocks:hover {
+	background-color: #fff;
+	box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.1);
+}
+
 
 .buy-inner-blocks p:nth-child(1) {
 	width: 77px;
-  height: 24px;
+	height: 24px;
 	display: inline-block;
 	text-transform: uppercase;
 	text-align: center;
@@ -28,11 +39,17 @@
 	color: #fff;
 }
 
+.buy-block .block-2 p:nth-child(1) {
+	width: 110px;
+	background-color: #bd8cbf;
+}
+
 .buy-inner-blocks p:nth-child(2) {
 	font-size: 30px;
 	line-height: 40px;
 	font-weight: 300;
 	color: #2e3b4e;
+	margin: 15px 0 11px;
 }
 
 .buy-inner-blocks p:nth-child(3) {
@@ -43,14 +60,72 @@
 
 .buy-inner-blocks a:nth-child(2) {
 	display: inline-block;
-	margin-right: 10px;
 }
 
 .buy-inner-blocks i {
 	color: #c5c5c5;
-	font-size: 18px;
+	font-size: 24px;
+	margin-right: 18px;
 }
 
 .buy-btn {
 	display: block;
+	width: 151px;
+	height: 47px;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 700;
+	line-height: 47px;
+	letter-spacing: 1.2px;
+	border-radius: 3px;
+	background-color: #82ca9c;
+	text-align: center;
+	color: #fff;
+	margin: 22px 0 17px;
+}
+
+.buy-btn:hover {
+	transform: scale(1.05);
+}
+
+.buy-btn:active {
+	transform: scale(1);
+}
+
+.buy-block .site-link {
+	top: 190px;
+	left: 42px;
+	color: #b8b8b8;
+} 
+
+.buy-block .site-link:hover {
+	text-decoration: underline;
+}
+
+@media (max-width: 1455px) {
+	.buy-block .site-link {
+		bottom: 20px;
+		left: 20px;
+		top: auto;
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	} 
+}
+
+@media (max-width: 850px) {
+	.buy-wrap {
+		-webkit-flex-direction: column;
+		-moz-flex-direction: column;
+		-ms-flex-direction: column;
+		-o-flex-direction: column;
+		flex-direction: column;
+	}
+	.buy-inner-blocks {
+		max-width: 100%;
+		transition: all 0.2s ease;
+		padding: 45px 70px 54px 52px;
+	}
+	.buy-block {
+		padding: 100px 0;
+	}
 }
