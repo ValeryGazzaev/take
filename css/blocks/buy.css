@@ -122,8 +122,6 @@
 	}
 	.buy-inner-blocks {
 		max-width: 100%;
-		transition: all 0.2s ease;
-		padding: 45px 70px 54px 52px;
 	}
 	.buy-block {
 		padding: 100px 0;
